@@ -35,18 +35,7 @@ Usuarios:
 Se puede usar en una app móvil, una extensión de navegador o una plataforma web.
 
 
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-
-
-This is how you create code examples:
-```
-from transformers import pipeline
-emotion_classifier = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
-text = "I feel overwhelmed and tired today"
-results = emotion_classifier(text)
-print(results)
-```
+![Movil](https://www.istockphoto.com/es/foto/maqueta-de-smartphone-primer-plano-de-la-mujer-usando-el-tel%C3%A9fono-m%C3%B3vil-con-la-gm1329568867-413259737)
 
 
 ## Data sources and AI methods
