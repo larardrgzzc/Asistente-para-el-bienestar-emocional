@@ -34,12 +34,10 @@ Usuarios:
 * Profesionales que desean monitorear su bienestar
 Se puede usar en una app móvil, una extensión de navegador o una plataforma web.
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
+
 ![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+
 
 This is how you create code examples:
 ```
@@ -48,7 +46,6 @@ emotion_classifier = pipeline("text-classification", model="j-hartmann/emotion-e
 text = "I feel overwhelmed and tired today"
 results = emotion_classifier(text)
 print(results)
-
 ```
 
 
