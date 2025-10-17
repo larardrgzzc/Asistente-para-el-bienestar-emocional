@@ -35,7 +35,8 @@ Usuarios:
 Se puede usar en una app móvil, una extensión de navegador o una plataforma web.
 
 
-![Movil](https://eldeforma.com/2020/09/29/whatsapp-habilitara-la-opcion-para-que-no-aparezcas-en-linea-cuando-ya-te-fuiste-a-dormir/mujer-mirando-su-celular/#google_vignette)
+<img width="423" height="277" alt="image" src="https://github.com/user-attachments/assets/a51713fa-f9a1-4e02-bd8c-56923611b2a7" />
+
 
 
 ## Data sources and AI methods
