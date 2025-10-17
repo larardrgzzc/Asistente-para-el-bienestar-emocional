@@ -8,22 +8,31 @@ Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+EmoTrack es una herramienta basada en IA que analiza mensajes escritos (como diarios personales o chats) para detectar emociones y ofrecer recomendaciones personalizadas para mejorar el bienestar emocional. Ayuda a los usuarios a reflexionar sobre su estado emocional y tomar decisiones más conscientes. 
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+La salud mental es un tema crítico y cada vez más presente en nuestras vidas. Muchas personas experimentan ansiedad, estrés o depresión sin darse cuenta de cómo evolucionan sus emociones a lo largo del tiempo. EmoTrack busca ayudar a los usuarios a identificar patrones emocionales y recibir sugerencias útiles.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Problemas que aborda:
+* Dificultad para identificar y expresar emociones
+* Falta de seguimiento del estado emocional diario
+* Necesidad de herramientas accesibles para el autocuidado mental
+Mi motivación personal surge del interés por combinar tecnología y bienestar humano. Este proyecto puede ser una herramienta valiosa para quienes buscan mejorar su salud emocional sin recurrir directamente a terapia profesional.
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+El usuario escribe libremente sobre su día, sus pensamientos o sentimientos. EmoTrack analiza el texto y devuelve:
+* Un resumen emocional (por ejemplo: "Predominan emociones de tristeza y ansiedad")
+* Recomendaciones personalizadas (ejercicios de respiración, journaling, contacto social)
+* Un gráfico de evolución emocional si se usa de forma continua
+Usuarios:
+* Personas interesadas en el autocuidado emocional
+* Estudiantes, trabajadores, cuidadores
+* Profesionales que desean monitorear su bienestar
+Se puede usar en una app móvil, una extensión de navegador o una plataforma web.
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
@@ -34,46 +43,52 @@ If you need to resize images, you have to use an HTML tag, like this:
 
 This is how you create code examples:
 ```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+from transformers import pipeline
+emotion_classifier = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
+text = "I feel overwhelmed and tired today"
+results = emotion_classifier(text)
+print(results)
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
 ```
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+Fuentes de datos:
+* Dataset de emociones en texto como Emotion Dataset from Kaggle. (https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp)
+* Datos generados por los propios usuarios (con consentimiento)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+Técnicas de IA:
+* Procesamiento de lenguaje natural (NLP)
+* Modelos de clasificación de emociones (como BERT o DistilBERT)
+* Visualización de datos con bibliotecas como Matplotlib o Plotly
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Limitaciones:
+* No reemplaza la terapia profesional
+*Puede haber errores en la interpretación emocional
+* Riesgos éticos si se usa sin consentimiento o sin privacidad adecuada
+
+Consideraciones éticas:
+* Protección de datos personales
+* Transparencia en el uso de modelos
+* Evitar recomendaciones que puedan causar daño
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+Futuras mejoras:
+* Integración con dispositivos de bienestar (como pulseras inteligentes)
+* Soporte multilingüe
+* Incorporación de análisis de voz y expresión facial
 
+Para avanzar, se necesitaría:
+* Colaboración con psicólogos
+* Validación clínica
+* Financiamiento para desarrollo de app
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+Inspirado por el curso Building AI de Reaktor y la Universidad de Helsinki
+* Dataset de emociones de Kaggle por Praveen Govi
+* Modelo de emociones de Hugging Face por Jan Hartmann
+* Licencias de código abierto respetadas según CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) 
