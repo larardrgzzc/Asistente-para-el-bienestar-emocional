@@ -35,7 +35,7 @@ Usuarios:
 Se puede usar en una app móvil, una extensión de navegador o una plataforma web.
 
 
-![Movil](https://www.istockphoto.com/es/foto/maqueta-de-smartphone-primer-plano-de-la-mujer-usando-el-tel%C3%A9fono-m%C3%B3vil-con-la-gm1329568867-413259737)
+![Movil](https://eldeforma.com/2020/09/29/whatsapp-habilitara-la-opcion-para-que-no-aparezcas-en-linea-cuando-ya-te-fuiste-a-dormir/mujer-mirando-su-celular/#google_vignette)
 
 
 ## Data sources and AI methods
